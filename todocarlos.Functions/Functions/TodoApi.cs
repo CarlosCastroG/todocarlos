@@ -127,7 +127,6 @@ namespace todocarlos.Functions.Functions
             });
         }
 
-
         [FunctionName(nameof(GetTodoByID))]
         public static IActionResult GetTodoByID(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "todo/{id}")] HttpRequest req,
